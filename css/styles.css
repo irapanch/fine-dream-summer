@@ -1,0 +1,235 @@
+:root {
+    --white-background-color: #ffffff;
+    --hero-background-color: #333087;
+    --text-color:#1d1d1b;
+    --accent-color:#e27601;
+    /* білий текст */
+    --light-color:  #fffffc; 
+    /* ---------- */
+	--primary-brand-color: #4d5ae5;
+	--pressed-state-color: #404bbf;
+	--dark-color: #2e2f42;
+	--success-color: #31d0aa;
+	
+	--suble-text-color: #8e8f99;
+	
+	--light-color:  #fffffc;
+	--modal-overlay-color: rgba(46, 47, 66, 0.4);
+
+	
+	--modal-background-color: #fcfcfc;
+}
+
+body {
+	font-family: "Russo One", sans-serif;
+  font-weight: 400 !important;
+  font-style: normal;
+	background-color: var(--white-background-color);
+	color: var(--text-color);
+    font-size: 19px;
+line-height: 1.1;
+letter-spacing: 0px;
+	
+}
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+p{
+	margin-top: 0;
+	margin-bottom: 0;
+    font-weight: 400;
+}
+
+img{
+	display: block;
+}
+
+
+li {
+	list-style: none;
+}
+link {
+    cursor: pointer;
+    text-decoration: none;
+}
+.container {
+    width: 320px;
+    padding: 0 20px;
+    margin: auto;
+    /* outline: 1px solid tomato; */
+}
+
+/* ---- header---- */
+header {
+    background-color: var(--hero-background-color);
+    color: var(--light-color);
+    background-image:url(../images/starsBg.png);
+    text-align: center;
+}
+.logo {
+    padding-top: 35px;
+    margin-bottom: 18px;
+      
+}
+.logo-link {
+    display: flex;
+    justify-content: center;
+
+}
+.logo img {
+    width: 184px;
+    height: 185px; 
+   }
+   .header-subtitle {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2;
+    
+    
+   }
+.header-title {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    
+} 
+
+/* ---- hero------ */
+.hero-section {
+    background-color: var(--hero-background-color);
+    color: var(--light-color);
+    text-align: center;
+}
+.hero-img{
+    padding-top: 28px;
+    margin-bottom: 36px;
+}
+.hero-img-blanket2D {
+    width: 280px;
+    height: 165px;
+}
+.hero-title {
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+.hero-text{
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 1.5;
+ 
+}
+.hero-desc-list {
+    margin-bottom: 29px;
+}
+.hero-list-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.hero-item-img {
+    margin-bottom: 10px;
+}
+.hero-list-img img{
+    width: 83px;
+    height: 83px; 
+}
+
+
+
+
+/* -----main-section--  */
+.composition{
+    position: relative;
+    padding-top: 25px;
+    margin-bottom: 35px;
+ 
+}
+
+.main-img img{
+   
+    /*  
+   1439 708  921*558 */
+}
+.main-text{
+    width: 135px;
+    text-align: left;
+    line-height: 1.3;
+    margin-left: auto;
+}
+.main-text-position{
+    position: absolute;
+    bottom: 11px;
+    right: 24px;
+}
+
+.main-img-coverlidD,
+.main-img-cottonD,
+.main-img-blanketD,
+.main-img-bedSheetsD {
+    width: 220px;
+    height: 220px; 
+    margin: auto;
+    margin-bottom: 18px;
+}
+.cover, .cotton, .blanket, .bedSheets{
+    text-align: center;
+    /* margin-bottom: 20px; */
+    padding-bottom: 27px;
+}
+.cover h2, .cotton h2,.blanket h2, .bedSheets h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    
+    line-height: 1;
+    margin-bottom: 7px;
+}
+.cover p,  .cotton p, .blanket p, .bedSheets p {
+    font-size: 19px;
+    letter-spacing: 0px;     
+    line-height: 1.2;
+   
+}
+
+/* ------ footer ------ */
+footer {
+    background-color: var(--hero-background-color);
+    color: var(--light-color);
+    background-image:url(../images/cloudsBgMob.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+   
+background-size: auto 120%;
+    text-align: center;
+}
+footer p {
+    padding-top: 30px;
+    padding-bottom: 94px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    
+
+}
+footer span {
+    display: block;
+    font-size: 37px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+
+
+
