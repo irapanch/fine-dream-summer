@@ -48,7 +48,6 @@ link {
     width: 320px;
     padding: 0 20px;
     margin: auto;
-    outline: 1px solid tomato;
     @media (min-width: 1028px) {
         width: 1028px;
         padding: 0 50px;
