@@ -89,6 +89,7 @@ header {
 @media (min-width: 1539px) {
     header {
         background-image: url(../images/starsBgD.png);
+        height: 1009px;
     }
 }
 .header-container {
@@ -160,7 +161,9 @@ header {
     
 } 
 
-/* ////////////////////////////////////// */
+
+
+
 /* ---- hero-section ------ */
 
 .hero-section {
@@ -171,6 +174,12 @@ header {
 .hero-container{
     position: relative;
     padding-bottom: 28px;
+    @media (min-width: 1539px) {
+       padding-top: 50px;
+      }
+      @media (min-width: 1539px) {
+        padding-bottom: 70px;
+       }
 }
 .hero-img{
     padding-top: 28px;
@@ -189,7 +198,11 @@ header {
         right: 50px;
         width: 619px;
         height: 365px;
-
+      }
+      @media (min-width: 1539px) {
+        width: 891px;
+        height: 525px;
+        top: -635px;
       }
 }
 .hero-img-blanket1D{
@@ -201,7 +214,11 @@ header {
         left: 50px;
         width: 521px;
         height: 292px;
-
+      }
+      @media (min-width: 1539px) {
+        width: 750px;
+        height: 420px;
+        top: -461px;
       }
 }
 .hero-list{
@@ -210,6 +227,10 @@ header {
     justify-content: space-between;
     gap: 190px;
       }
+      @media (min-width: 1539px) {
+        width: 1267px;
+        margin: auto;
+       }
     
 }
 
@@ -229,6 +250,10 @@ header {
         text-transform: none;
         line-height: 1.5;
       }
+      @media (min-width: 1539px) {
+        font-size: 52px;
+        letter-spacing: 4px;
+       }
 }
 .hero-text{
     font-size: 21px;
@@ -238,6 +263,10 @@ header {
         font-size: 29px;
         line-height: 1.3;
     }
+    @media (min-width: 1539px) {
+        font-size: 37px;
+        letter-spacing: 3px;
+       }
  
 }
 
@@ -247,8 +276,13 @@ header {
         margin-bottom: 18px;
         display: flex;
         justify-content: space-between;
-
+        gap: 190px;
     }
+    @media (min-width: 1539px) {
+        width: 1267px;
+        margin: auto;
+        margin-bottom: 40px;
+       }
 }
 .hero-desc-list li {
     @media (min-width: 1028px) {
@@ -273,19 +307,26 @@ header {
 .hero-list-img img{
     width: 83px;
     height: 83px; 
+    @media (min-width: 1539px) {
+        width: 111px;
+        height: 111px; 
+       }
 }
 
 
 
-/* ////////////////////////////////////// */
 /* -----main-section--  */
 .composition{
     position: relative;
     padding-top: 25px;
     margin-bottom: 35px;
+    @media (min-width: 1539px) {
+        padding-top: 89px;
+        margin-bottom: 100px;
+       }
  
 }
-.main-img-description1D{
+.main-img-description1Mob{
     @media (min-width: 1028px) {
         display: none;
       }
@@ -297,6 +338,15 @@ header {
         width: 921px;
         height: 558px;
       }
+      @media (min-width: 1539px) {
+        display: none;
+       }
+}
+.main-img-description1D{
+    display: none;
+    @media (min-width: 1539px) {
+        display: block;
+       }
 }
 .main-text{
     width: 135px;
@@ -310,6 +360,16 @@ header {
         letter-spacing: 1px;
         padding-right: 35px;
       }
+      @media (min-width: 1539px) {
+        position: absolute;
+        top: 295px;
+        right: 50px;
+        padding: 0;
+        width: 280px;
+        font-size: 37px;
+        letter-spacing: 2px;
+        text-align: left;
+       }
 }
 .main-text-position{
     position: absolute;
@@ -319,11 +379,22 @@ header {
         font-size: 35px;
         letter-spacing: 1px;
       }
+      @media (min-width: 1539px) {
+        position: absolute;
+        bottom: 100px;
+        right: 78px;
+        font-size: 37px;
+        letter-spacing: 2px;
+       }
 }
 .main-list {
     @media (min-width: 1028px) {
         padding-bottom: 54px;
       }
+      @media (min-width: 1539px) {
+        padding-bottom: 77px;
+    
+       }
    
 }
 .main-list li{
@@ -349,6 +420,9 @@ header {
         display: flex;
         gap: 30px;
       }
+      @media (min-width: 1539px) {
+        gap: 50px;
+       }
     
 }
 .main-img-coverlidD,
@@ -364,6 +438,10 @@ header {
         width: 323px;
         height: 323px;
       }
+      @media (min-width: 1539px) {
+        width: 501px;
+        height: 501px;
+       }
 }
 .cover, .cotton, .blanket, .bedSheets{
     text-align: center;
@@ -383,6 +461,11 @@ header {
         font-size: 35px;
         margin-bottom: 0px;
       }
+    @media (min-width: 1539px) {
+        font-size: 62px;
+        letter-spacing: 2px;
+        margin-bottom: 19px;
+       }
 }
 .cover p,  .cotton p, .blanket p, .bedSheets p {
     font-size: 19px;
@@ -390,9 +473,15 @@ header {
     line-height: 1.2;
     @media (min-width: 1028px) {
         font-size: 29px;
-             }   
+     } 
+    @media (min-width: 1539px) {
+         font-size: 37px;
+         
+               } 
 }
-/* ////////////////////////////////////////// */
+
+
+
 /* -------------comparison-section */
 
 .comparison-section{
@@ -404,37 +493,66 @@ header {
         color: var(--white-background-color);
         text-align: center;
              } 
+     @media (min-width: 1539px) {
+        height: 460px;
+         }  
 
 }
 .comparison-container{
-    padding-top: 55px;    
+    padding-top: 55px;  
+    @media (min-width: 1539px) {
+        padding-top: 79px;  
+              }   
 }
 .comparison-section h2 {
     font-size: 54px;
-letter-spacing: 1px;
-text-transform: uppercase;
-margin-bottom: 30px;
-}
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 30px; 
+    @media (min-width: 1539px) {
+      font-size: 77px;
+      letter-spacing: 2px; 
+      margin-bottom: 46px; 
+          }  
+} 
 .comparison-wrap {
     display: flex;
     justify-content: space-between;
+    gap: 14px;
+    @media (min-width: 1539px) {
+       justify-content: center;
+       margin: auto;
+       gap: 21px;
+         }     
 }
 .comparison-img-blanket1D{
     width: 381px;
     height: 214px;
     margin-bottom: 25px;
+    @media (min-width: 1539px) {
+        width: 566px;
+        height: 317px;
+            }  
 }
 .comparison-img-blanketColorD{
     width: 401px;
     height: 214px;
     margin-bottom: 25px;
+    @media (min-width: 1539px) {
+        width: 607px;
+        height: 317px;
+            }  
 }
 
 .comparison-title {
     font-size: 35px;
-letter-spacing: 1px;
-text-transform: capitalize;
-margin-bottom: 47px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 47px;
+    @media (min-width: 1539px) {
+      font-size: 52px;
+      margin-bottom: 12px;
+      }
 
 }
 .comparison-subtitle{
@@ -442,22 +560,37 @@ margin-bottom: 47px;
     color: var(--accent-color);
     text-align: left;
     line-height: 1.7;
+    @media (min-width: 1539px) {
+        font-size: 42px;
+        }
 }
 .comparison-box{
     width: 100%;
     background-color: var(--accent-color);
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 20px 60px;
     font-size: 29px;
     letter-spacing: 1px;
+    @media (min-width: 1539px) {
+        font-size: 37px;
+        padding: 32px 60px;
+        }
 }
 .comparison-list h3{
     padding-bottom: 49px;
+    @media (min-width: 1539px) {
+        padding-bottom: 71px;
+        }
 }
 .comparison-list> .comparison-item{
     margin-bottom: 49px;
+    @media (min-width: 1539px) {
+        margin-bottom: 71px;
+        }
 
 }
+
+
 /* ------ footer ------ */
 footer {
     background-color: var(--hero-background-color);
@@ -470,7 +603,10 @@ background-size: auto 120%;
     text-align: center;
     @media (min-width: 1028px) {
         height: 925px;
-             } 
+    } 
+     @media (min-width: 1539px) {
+        height: 1183px;    
+    }
 
 }
 .footer-container{
@@ -492,6 +628,11 @@ footer p {
     @media (min-width: 1028px) {
         font-size: 36px;
              }
+ @media (min-width: 1539px) {
+    font-size: 52px;
+    padding-top: 0px;
+    padding-bottom: 155px;
+        }
     
 
 }
@@ -504,6 +645,9 @@ footer span {
     @media (min-width: 1028px) {
         font-size: 51px;
              }
+     @media (min-width: 1539px) {
+        font-size: 73px;
+        }         
 }
 
 
