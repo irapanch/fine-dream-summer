@@ -3,32 +3,19 @@
     --hero-background-color: #333087;
     --text-color:#1d1d1b;
     --accent-color:#e27601;
-    /* білий текст */
     --light-color:  #fffffc; 
-    /* ---------- */
-	--primary-brand-color: #4d5ae5;
-	--pressed-state-color: #404bbf;
-	--dark-color: #2e2f42;
-	--success-color: #31d0aa;
-	
-	--suble-text-color: #8e8f99;
-	
-	--light-color:  #fffffc;
-	--modal-overlay-color: rgba(46, 47, 66, 0.4);
-
-	
-	--modal-background-color: #fcfcfc;
+    
 }
 
 body {
 	font-family: "Russo One", sans-serif;
-  font-weight: 400 !important;
-  font-style: normal;
+   font-weight: 400 !important;
+   font-style: normal;
 	background-color: var(--white-background-color);
 	color: var(--text-color);
     font-size: 19px;
-line-height: 1.1;
-letter-spacing: 0px;
+   line-height: 1.1;
+   letter-spacing: 0px;
 	
 }
 ul {
@@ -61,19 +48,66 @@ link {
     width: 320px;
     padding: 0 20px;
     margin: auto;
-    /* outline: 1px solid tomato; */
+    outline: 1px solid tomato;
+    @media (min-width: 1028px) {
+        width: 1028px;
+        padding: 0 50px;
+      }
+    @media (min-width: 1539px) {
+        width: 1539px;
+        padding: 0 45px;
+      }
 }
 
 /* ---- header---- */
-header {
+/* header {
     background-color: var(--hero-background-color);
     color: var(--light-color);
-    background-image:url(../images/starsBg.png);
+    background-image: url(../images/starsBg.png);
+    text-align: center;
+    @media (min-width: 1028px) {
+        background-image: url(../images/starsBgTab.png);
+      }
+    @media (min-width: 1539px) {
+        background-image: url(../images/starsBgD.png);
+      }
+} */
+header {
+    background-color: var(--hero-background-color);
+    color: var(--white-background-color);
+    background-image: url(../images/starsBg.png);
     text-align: center;
 }
-.logo {
+
+@media (min-width: 1028px) {
+    header {
+        background-image: url(../images/starsBgTab.png);
+        height: 675px;
+    }
+}
+
+@media (min-width: 1539px) {
+    header {
+        background-image: url(../images/starsBgD.png);
+    }
+}
+.header-container {
     padding-top: 35px;
-    margin-bottom: 18px;
+    @media (min-width: 1028px) {
+        display: flex;
+        gap: 32px;
+        padding-top: 63px;
+      }
+    @media (min-width: 1539px) {
+        gap: 88px;
+        padding-top: 95px;
+      }
+}
+.logo {
+     margin-bottom: 18px;
+     @media (min-width: 1028px) {
+        margin-bottom: 0px;
+      }
       
 }
 .logo-link {
@@ -82,14 +116,32 @@ header {
 
 }
 .logo img {
-    width: 184px;
+    width: 185px;
     height: 185px; 
+    @media (min-width: 1028px) {
+        width: 247px;
+    height: 247px;
+      }
+    @media (min-width: 1539px) {
+        width: 345px;
+        height: 345px;
+      }
    }
-   .header-subtitle {
+ .header-subtitle {
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 2;
+    @media (min-width: 1028px) {
+        font-size: 42px;
+        letter-spacing: 4px;
+        line-height: 1.5;
+        padding-top: 22px;
+      }
+    @media (min-width: 1539px) {
+        font-size: 62px;
+        letter-spacing: 6px;
+      }
     
     
    }
@@ -98,43 +150,122 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.1;
+    @media (min-width: 1028px) {
+        font-size: 56px;
+       
+      }
+    @media (min-width: 1539px) {
+        font-size: 83px;
+      }
     
 } 
 
-/* ---- hero------ */
+/* ////////////////////////////////////// */
+/* ---- hero-section ------ */
+
 .hero-section {
     background-color: var(--hero-background-color);
     color: var(--light-color);
     text-align: center;
 }
+.hero-container{
+    position: relative;
+    padding-bottom: 28px;
+}
 .hero-img{
     padding-top: 28px;
     margin-bottom: 36px;
+    @media (min-width: 1028px) {
+        padding-top: 0px;
+    margin-bottom: 0px;
+      }
 }
 .hero-img-blanket2D {
     width: 280px;
     height: 165px;
+    @media (min-width: 1028px) {
+        position: absolute;
+        top: -442px;
+        right: 50px;
+        width: 619px;
+        height: 365px;
+
+      }
+}
+.hero-img-blanket1D{
+    display: none;
+    @media (min-width: 1028px) {
+        display: block;
+        position: absolute;
+        top: -304px;
+        left: 50px;
+        width: 521px;
+        height: 292px;
+
+      }
+}
+.hero-list{
+    @media (min-width: 1028px) {
+        display: flex;
+    justify-content: space-between;
+    gap: 190px;
+      }
+    
+}
+
+.hero-list li {
+    @media (min-width: 1028px) {
+        width: 50%;
+        text-align: left;
+      }
 }
 .hero-title {
     font-size: 25px;
     letter-spacing: 1px;
     text-transform: uppercase;
     line-height: 1.8;
+    @media (min-width: 1028px) {
+        font-size: 38px;
+        text-transform: none;
+        line-height: 1.5;
+      }
 }
 .hero-text{
     font-size: 21px;
     letter-spacing: 0px;
     line-height: 1.5;
+    @media (min-width: 1028px) {
+        font-size: 29px;
+        line-height: 1.3;
+    }
  
 }
+
 .hero-desc-list {
     margin-bottom: 29px;
+    @media (min-width: 1028px) {
+        margin-bottom: 18px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+.hero-desc-list li {
+    @media (min-width: 1028px) {
+        width: 50%;
+        text-align: left;
+      }
 }
 .hero-list-img {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 24px;
+    @media (min-width: 1028px) {
+        padding-bottom: 0px;
+        flex-direction: row;
+        gap: 18px;
+      }
 }
 .hero-item-img {
     margin-bottom: 10px;
@@ -146,7 +277,7 @@ header {
 
 
 
-
+/* ////////////////////////////////////// */
 /* -----main-section--  */
 .composition{
     position: relative;
@@ -154,24 +285,72 @@ header {
     margin-bottom: 35px;
  
 }
-
-.main-img img{
-   
-    /*  
-   1439 708  921*558 */
+.main-img-description1D{
+    @media (min-width: 1028px) {
+        display: none;
+      }
+}
+.main-img-description1Tab{
+    display: none;
+    @media (min-width: 1028px) {
+        display: block;
+        width: 921px;
+        height: 558px;
+      }
 }
 .main-text{
     width: 135px;
     text-align: left;
     line-height: 1.3;
     margin-left: auto;
+    @media (min-width: 1028px) {
+        width: auto;
+        text-align: right;
+        font-size: 35px;
+        letter-spacing: 1px;
+        padding-right: 35px;
+      }
 }
 .main-text-position{
     position: absolute;
     bottom: 11px;
     right: 24px;
+    @media (min-width: 1028px) {
+        font-size: 35px;
+        letter-spacing: 1px;
+      }
 }
-
+.main-list {
+    @media (min-width: 1028px) {
+        padding-bottom: 54px;
+      }
+   
+}
+.main-list li{
+    @media (min-width: 1028px) {
+        align-items: center;
+      }
+   
+}
+.main-list li:not(:last-child) {
+    @media (min-width: 1028px) {
+        margin-bottom: 20px;
+      }
+    
+}
+.main-list li:nth-child(2n) {
+    @media (min-width: 1028px) {
+        flex-direction: row-reverse;
+      }
+  
+}
+.main-item {
+    @media (min-width: 1028px) {
+        display: flex;
+        gap: 30px;
+      }
+    
+}
 .main-img-coverlidD,
 .main-img-cottonD,
 .main-img-blanketD,
@@ -180,27 +359,105 @@ header {
     height: 220px; 
     margin: auto;
     margin-bottom: 18px;
+    @media (min-width: 1028px) {
+        margin: 0;
+        width: 323px;
+        height: 323px;
+      }
 }
 .cover, .cotton, .blanket, .bedSheets{
     text-align: center;
-    /* margin-bottom: 20px; */
     padding-bottom: 27px;
+    @media (min-width: 1028px) {
+        padding-bottom: 0px;
+        text-align: left;
+      }
 }
 .cover h2, .cotton h2,.blanket h2, .bedSheets h2 {
     font-size: 25px;
     letter-spacing: 1px;
     color: var(--accent-color);
-    
     line-height: 1;
     margin-bottom: 7px;
+    @media (min-width: 1028px) {
+        font-size: 35px;
+        margin-bottom: 0px;
+      }
 }
 .cover p,  .cotton p, .blanket p, .bedSheets p {
     font-size: 19px;
     letter-spacing: 0px;     
     line-height: 1.2;
-   
+    @media (min-width: 1028px) {
+        font-size: 29px;
+             }   
+}
+/* ////////////////////////////////////////// */
+/* -------------comparison-section */
+
+.comparison-section{
+    display: none;
+    @media (min-width: 1028px) {
+        display: block;
+        height: 290px;
+        background-color: var(--hero-background-color);
+        color: var(--white-background-color);
+        text-align: center;
+             } 
+
+}
+.comparison-container{
+    padding-top: 55px;    
+}
+.comparison-section h2 {
+    font-size: 54px;
+letter-spacing: 1px;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+.comparison-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.comparison-img-blanket1D{
+    width: 381px;
+    height: 214px;
+    margin-bottom: 25px;
+}
+.comparison-img-blanketColorD{
+    width: 401px;
+    height: 214px;
+    margin-bottom: 25px;
 }
 
+.comparison-title {
+    font-size: 35px;
+letter-spacing: 1px;
+text-transform: capitalize;
+margin-bottom: 47px;
+
+}
+.comparison-subtitle{
+    font-size: 29px;
+    color: var(--accent-color);
+    text-align: left;
+    line-height: 1.7;
+}
+.comparison-box{
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 20px 60px;
+    font-size: 29px;
+    letter-spacing: 1px;
+}
+.comparison-list h3{
+    padding-bottom: 49px;
+}
+.comparison-list> .comparison-item{
+    margin-bottom: 49px;
+
+}
 /* ------ footer ------ */
 footer {
     background-color: var(--hero-background-color);
@@ -211,6 +468,19 @@ footer {
    
 background-size: auto 120%;
     text-align: center;
+    @media (min-width: 1028px) {
+        height: 925px;
+             } 
+
+}
+.footer-container{
+    @media (min-width: 1028px) {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: 100px;
+             }
 }
 footer p {
     padding-top: 30px;
@@ -219,6 +489,9 @@ footer p {
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2;
+    @media (min-width: 1028px) {
+        font-size: 36px;
+             }
     
 
 }
@@ -228,6 +501,9 @@ footer span {
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.1;
+    @media (min-width: 1028px) {
+        font-size: 51px;
+             }
 }
 
 
